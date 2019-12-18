@@ -37,13 +37,13 @@ int main()
 
 	std::cout << groupA;
 
-	StudentActivist* anOrd_ = anOrd->makeActivist();
-	StudentOrdinary* alAct_ = alAct->makeOrdinary();
-	StudentBotanist* arOrd_ = arOrd->makeBotanist();
+	StudentActivist* anAct_ = anOrd->makeActivist();
+	StudentOrdinary* alOrd_ = alAct->makeOrdinary();
+	StudentBotanist* arBot_ = arOrd->makeBotanist();
 
-	groupA.addStudent(anOrd_);
-	groupA.addStudent(arOrd_);
-	groupA.addStudent(alAct_);
+	groupA.addStudent(anAct_);
+	groupA.addStudent(arBot_);
+	groupA.addStudent(alOrd_);
 
 	std::cout << groupA;
 
@@ -52,7 +52,7 @@ int main()
 
 	std::cout << groupA;
 
-	delete anOrd, arOrd, naOrd, leBot, kaBot, efBot, seAct, alAct, elAct, anOrd_, alAct_, arOrd_;
+	delete anOrd, arOrd, naOrd, leBot, kaBot, efBot, seAct, alAct, elAct, anAct_, alOrd_, arBot_;
 	
 
 	cin.get();
